@@ -1,0 +1,82 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body *
+{
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+}
+
+.navbar
+{
+    background-color: #191919; 
+}
+
+.card
+{
+    border-radius: 0%;
+    background-color: #191919;
+}
+
+.foto-perfil
+{
+    width: 100%;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+.section-offset
+{
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+#section-perfil, #section-cv, #section-contactos
+{
+    min-height: 95vh;
+    color: #fff;
+    background-color: #191919;
+}
+
+#section-bio, #section-trabajos
+{
+    min-height: 95vh;
+    color: #191919;
+    background-color: #fff;
+}
+
+footer
+{
+    color: #fff;
+    background-color: #191919;
+}
+
+.texto-logo1
+{
+    font-size: 10vh;
+    line-height: 4vh;
+    font-weight: 700;
+}
+
+.texto-logo2
+{
+    font-size: 2.5vh;
+    line-height: 2.5vh;
+    font-weight: 100;
+}
+
+.logo-texto
+{
+    letter-spacing: 1.2vw
+}
+
+.separador
+{
+    height: 5px;
+    background-color: #fff;
+}
