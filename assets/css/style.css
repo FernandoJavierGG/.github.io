@@ -27,6 +27,7 @@ body *
 
 .foto-perfil
 {
+    position: relative;
     width: 100%;
     border-radius: 50%;
     filter: grayscale(100%);
