@@ -33,20 +33,27 @@ body *
 }
 .section-offset
 {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
 }
 
-#section-perfil, #section-cv, #section-contactos
+#section-perfil
 {
     min-height: 95vh;
+    color: #fff;
+    background-color: #191919;  
+}
+
+#section-cv, #section-contactos
+{
+    min-height: 100vh;
     color: #fff;
     background-color: #191919;
 }
 
 #section-bio, #section-trabajos
 {
-    min-height: 95vh;
+    min-height: 100vh;
     color: #191919;
     background-color: #fff;
 }
