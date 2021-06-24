@@ -34,30 +34,29 @@ body *
 }
 .section-offset
 {
-    padding-top: 5rem;
-    padding-bottom: 4rem;
+    padding-top: 4rem;
 }
 
-#section-perfil
-{
-    min-height: 95vh;
-    color: #fff;
-    background-color: #191919;  
-}
 
-#section-cv, #section-contactos
+#section-intro, #section-bio
 {
     min-height: 100vh;
+}
+
+#section-cv, #section-contactos, #section-intro
+{
     color: #fff;
     background-color: #191919;
 }
 
 #section-bio, #section-trabajos
 {
-    min-height: 100vh;
     color: #191919;
     background-color: #fff;
 }
+
+
+
 
 footer
 {
@@ -89,3 +88,15 @@ footer
     height: 5px;
     background-color: #fff;
 }
+
+.progress
+{
+    height: 0.5rem;
+    background-color: #505050;
+}
+.progress-bar
+{
+    height: 0.5rem;
+    background-color: #fff;
+}
+
