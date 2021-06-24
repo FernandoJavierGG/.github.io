@@ -5,10 +5,6 @@ html
 
 body *
 {
-    margin: 0;
-    bottom: 0;
-    padding: 0;
-
     font-family: 'Oxygen', sans-serif;
     font-weight: 400;
 }
@@ -18,11 +14,30 @@ body *
     background-color: #191919; 
 }
 
-.card
+#section-intro .card
 {
     border-radius: 0%;
     border: 0px solid rgba(0,0,0,0);
     background-color: #191919;
+}
+
+#section-bio .card
+{
+    border-radius: 0%;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: white;
+}
+
+#section-cv .card
+{
+    border-radius: 0%;
+    border: 0px solid rgba(0,0,0,0);
+    background-color: #191919;
+}
+
+#section-bio .iconos img
+{
+    filter:invert();
 }
 
 .foto-perfil
@@ -32,11 +47,6 @@ body *
     border-radius: 50%;
     filter: grayscale(100%);
 }
-.section-offset
-{
-    padding-top: 4rem;
-}
-
 
 #section-intro, #section-bio
 {
@@ -55,13 +65,16 @@ body *
     background-color: #fff;
 }
 
-
-
-
 footer
 {
     color: #fff;
     background-color: #191919;
+}
+
+footer a
+{
+    color: #fff;
+    text-decoration: none;
 }
 
 .texto-logo1
@@ -87,6 +100,11 @@ footer
 {
     height: 5px;
     background-color: #fff;
+}
+
+.carousel-fondo
+{
+    background-color: #191919d8;
 }
 
 .progress

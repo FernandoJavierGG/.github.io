@@ -30,7 +30,7 @@
 
 <body>
     <!-- Nav -->
-    <nav class="px-4 navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="px-4 py-0 navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid p-0">
             <a class="navbar-brand fw-bold fs-1" href="#">FG</a>
             <button class="ms-auto navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,13 +43,13 @@
                     <li class="nav-item ms-auto">
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
-                    <li class="nav-item ms-auto">
+                    <li class="nav-item ms-auto d-lg-none">
                         <a class="nav-link" href="#section-bio">Personal</a>
                     </li>
                     <li class="nav-item ms-auto">
                         <a class="nav-link" href="#section-trabajos">Trabajos</a>
                     </li>
-                    <li class="nav-item ms-auto">
+                    <li class="nav-item ms-auto d-lg-none">
                         <a class="nav-link" href="#section-cv">Profesional</a>
                     </li>
                     <li class="nav-item ms-auto">
@@ -59,163 +59,230 @@
             </div>
         </div>
     </nav>
-
-    <!-- 1 Seccion Intro -->
-    <section class="main row p-4 mx-0" id="section-intro">
-        <div class="card px-0 d-flex align-items-center">
-            <div class="col-11 px-0">
-                <img class="foto-perfil px-0" src="assets/img/foto_perfil.jpg" class="card-img-top" alt="foto perfil">
+    <!-- 0 Seccion Colapsable Intro + Bio -->
+    <section class="row mx-0">
+        <!-- 1 Seccion Intro -->
+        <section class="main row px-4 mx-0 col-12 col-lg-6" id="section-intro">
+            <div class="card my-auto">
+                <div class="col-11 mx-auto px-0 d-lg-none">
+                    <img class="foto-perfil px-0" src="assets/img/foto_perfil.jpg" class="card-img-top" alt="foto perfil">
+                </div>
+                <div class="row col-11 px-0 mx-auto my-5">
+                    <div class="col-6 mb-2 px-0 d-flex align-items-center justify-content-end">
+                        <h1 class="text-end texto-logo1">FG</h1>
+                    </div>
+                    <div class="col-6 mb-2 ps-2 d-flex align-items-center">
+                        <h5 class="text-start texto-logo2">Fernando<br>González<br>Gómez</h5>
+                    </div>
+                    <hr class="px-4 my-3 separador">
+                    </hr>
+                    <h1 class="px-4 text-center fw-light logo-texto">PORTAFOLIO</h1>
+                </div>
             </div>
-            <div class="row col-11 px-0 mx-0 my-5">
-                <div class="col-6 mb-2 px-0 d-flex align-items-center justify-content-end">
-                    <h1 class="text-end texto-logo1">FG</h1>
-                </div>
-                <div class="col-6 mb-2 ps-2 d-flex align-items-center">
-                    <h5 class="text-start texto-logo2">Fernando<br>González<br>Gómez</h5>
-                </div>
-                <hr class="px-4 my-3 separador">
+            <a class="text-center p-0 nav-link d-lg-none" style="position:absolute; bottom:1rem; left:0;" href="#section-bio">
+                <i class="text-white fas fa-angle-down fa-3x"></i>
+            </a>
+        </section>
+        <!-- 2 Seccion Bio -->
+        <section class="main col-12 col-lg-6 my-auto" id="section-bio">
+            <div class="pt-lg-2 px-4 pt-5 text-center">
+                <h1 class="py-4">EL TENISTA?</h1>
+                <p class="mb-3">No realmente. Me llamo Fernando, tengo 34 años y actualmente vivo en Santiago. Soy
+                    arquitecto y generalista 3D, actualmente desempleado pero freelanceando a full para sobrevivir la
+                    pandemia con dignidad.</p>
+                <p class="mb-3">Después de una particularmente ultraviolenta crisis vocacional sazonada con las pocas
+                    oportunidades de trabajo en mi área, me decidí a buscar y aprender alguna herramienta nueva entre diseño
+                    e informática para poder ampliar mis oportunidades laborales a futuro, como tengo un poco de experiencia
+                    programando el Diseño UX/UI termino siendo mi eleccion.</p>
+            </div>
+
+            <!-- Esto se oculta en sm -->
+            <div class="px-4 pb-5 text-center d-none d-lg-block">
+                <h1 class="py-2">ARQUITECTO ARTISTA 3D</h1>
+                <p class="mb-3">Arquitecto graduado con amplia experiencia en el área de visualización digital, he tenido la
+                    oportunidad y responsabilidad de trabajar en todos los procesos relativos al desarrollo y manejo de
+                    proyectos. Trabajo en equipo y en colaboración multidisciplinaria, eficiente al priorizar, optimizar y
+                    organizar flujos de trabajo. Tengo facilidad para establecer relaciones interpersonales positivas;
+                    comunicación franca y segura que transmite confianza a las personas, así como aprendizaje autodidacta
+                    con incorporación constante de las últimas herramientas relevantes a la profesión.</p>
+                <h1 class="pt-2">HABILIDADES</h1>
+                <hr class="px-4 my-4 separador">
                 </hr>
-                <h1 class="px-4 text-center fw-light logo-texto">PORTAFOLIO</h1>
+                <div class="row mx-0 g-5"> 
+                    <div class="iconos card mb-3 col-3">
+                        <div data-bs-toggle="tooltip" data-bs-placement="top" title="Presiona para mas información">
+                            <a tabindex="0" class="btn btn-lg btn-secondary btn-sm" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus" 
+                            data-bs-content="Levantamientos, plantas, alzados y fachadas">DIBUJO 2D</a>
+                        </div>
+                        <div class="row g-0 mb-3">
+                            <div class="col align-self-center">
+                                <img src="assets/img/dwg.svg" class="img-fluid rounded-start p-3" alt="dwg file">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iconos card mb-3 col-3">
+                        <div data-bs-toggle="tooltip" data-bs-placement="top" title="Presiona para mas información">
+                            <a tabindex="0" class="btn btn-lg btn-secondary btn-sm" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus" 
+                            data-bs-content="Modelado, animacion, texturizado e Iluminación">DISEÑO 3D</a>
+                        </div>
+                        <div class="row g-0 mb-3">
+                            <div class="col align-self-center">
+                                <img src="assets/img/3ds.svg" class="img-fluid rounded-start p-3" alt="3ds file">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iconos card mb-3 col-3">
+                        <div data-bs-toggle="tooltip" data-bs-placement="top" title="Presiona para mas información">
+                            <a tabindex="0" class="btn btn-lg btn-secondary btn-sm" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus" 
+                            data-bs-content="Plantas 3D, renders, animaciones, prototipos">RENDERIZADO</a>
+                        </div>
+                        <div class="row g-0 mb-3">
+                            <div class="col align-self-center">
+                                <img src="assets/img/rendering.svg" style="max-width: 100%;" class="img-fluid rounded-start p-3"
+                                    alt="psd file">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iconos card mb-3 col-3">
+                        <div data-bs-toggle="tooltip" data-bs-placement="top" title="Presiona para mas información">
+                            <a tabindex="0" class="btn btn-lg btn-secondary btn-sm" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus" 
+                            data-bs-content="Fotomontajes, edicion videos, Post-producción, panoramas 360°">COMPOSICIÓN</a>
+                        </div>
+                        <div class="row g-0 mb-3">
+                            <div class="col align-self-center">
+                                <img src="assets/img/psd.svg" class="img-fluid rounded-start p-3" alt="psd file">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="pt-2">SOFTWARE</h1>
+                <hr class="px-4 my-4 separador">
+                </hr>
+                <div class="row mx-0">
+                    <div class="card px-0 col my-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Autodesk AutoCAD">
+                        <img src="assets/img/icons8-autodesk-autocad.svg" style="max-width: 50%;" class="card-img-top mx-auto" alt="logo autocad">
+                    </div>
+                    <div class="card px-0 col my-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Autodesk 3DsMax">
+                        <img src="assets/img/icons8-3ds-max.svg" style="max-width: 50%;" class="card-img-top mx-auto" alt="logo 3D max">
+                    </div>
+                    <div class="card px-0 col my-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Adobe Photoshop">
+                        <img src="assets/img/icons8-adobe-photoshop.svg" style="max-width: 60%;" class="card-img-top mx-auto" alt="logo Photoshop">
+                    </div>
+                    <div class="card px-0 col my-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Adobe Premier">
+                        <img src="assets/img/icons8-adobe-premiere-pro.svg" style="max-width: 60%;"
+                            class="card-img-top mx-auto" alt="logo Premiere">
+                    </div>
+                    <div class="card px-0 col my-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Itoo Railclone">
+                        <img src="assets/img/rc-logo.svg" style="max-width: 45%;" class="card-img-top mx-auto"
+                            alt="logo Railclone">
+                    </div>
+                    <div class="card px-0 col my-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Itoo ForestPack">
+                        <img src="assets/img/fp-logo.svg" style="max-width: 45%;" class="card-img-top mx-auto"
+                            alt="logo ForestPack">
+                    </div>
+                    <div class="card px-0 col my-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="AXYZ Anima">
+                        <img src="assets/img/Anima-logo.svg" style="max-width: 45%;" class="card-img-top mx-auto"
+                            alt="logo Anima">
+                    </div>
+                    <div class="card px-0 col my-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Chaosgroup V-ray">
+                        <img src="assets/img/Vray-01.svg" style="max-width: 45%;" class="card-img-top mx-auto"
+                            alt="logo V-ray">
+                    </div>
+                </div>
             </div>
-        </div>
-        <a class="text-center p-0 nav-link" style="position:absolute; bottom:1rem; left:0;" href="#section-bio">
-            <i class="text-white fas fa-angle-down fa-3x"></i>
-        </a>
+        </section>
     </section>
-
-    <!-- 2 Seccion Bio -->
-    <section class="main" id="section-bio">
-        <div class="section-offset px-4 text-center">
-            <h1 class="py-4">EL TENISTA?</h1>
-            <p class="mb-3">No realmente. Me llamo Fernando, tengo 34 años y actualmente vivo en Santiago. Soy
-                arquitecto y generalista 3D, actualmente desempleado pero freelanceando a full para sobrevivir la
-                pandemia con dignidad.</p>
-            <p class="mb-3">Después de una particularmente ultraviolenta crisis vocacional sazonada con las pocas
-                oportunidades de trabajo en mi área, me decidí a buscar y aprender alguna herramienta nueva entre diseño
-                e informática para poder ampliar mis oportunidades laborales a futuro, como tengo un poco de experiencia
-                programando el Diseño UX/UI termino siendo mi eleccion.</p>
-        </div>
-    </section>
-
+        
     <!-- 3 Seccion Trabajos -->
     <section class="main" id="section-trabajos">
-        <div class="section-offset">
-            <div>
-                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="4000">
-                            <img src="assets/img/Portafolio00.jpg" class="d-block w-100" alt="portafolio 0">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="4000">
-                            <img src="assets/img/Portafolio01.jpg" class="d-block w-100" alt="portafolio 1">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="4000">
-                            <img src="assets/img/Portafolio02.jpg" class="d-block w-100" alt="portafolio 2">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
+        <h1 class="py-4 text-center d-lg-none">TRABAJOS</h1>
+        <div>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="assets/img/Portafolio00.jpg" class="d-block w-100" alt="portafolio 0">
+                        <div class="carousel-fondo carousel-caption d-none d-md-block text-white">
+                            <h5>Proyecto 1</h5>
+                            <p>Este proyecto fue solicitado por algun cliente.</p>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="assets/img/Portafolio01.jpg" class="d-block w-100" alt="portafolio 1">
+                        <div class="carousel-fondo carousel-caption d-none d-md-block text-white">
+                            <h5>Proyecto 2</h5>
+                            <p>Este proyecto fue solicitado por algun cliente.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="assets/img/Portafolio02.jpg" class="d-block w-100" alt="portafolio 2">
+                        <div class="carousel-fondo carousel-caption d-none d-md-block text-white">
+                            <h5>Proyecto 3</h5>
+                            <p>Este proyecto fue solicitado por algun cliente.</p>
+                        </div>
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div>
-                <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="4300">
-                            <img src="assets/img/Portafolio03.jpg" class="d-block w-100" alt="portafolio 3">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="4000">
-                            <img src="assets/img/Portafolio04.jpg" class="d-block w-100" alt="portafolio 4">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="4000">
-                            <img src="assets/img/Portafolio05.jpg" class="d-block w-100" alt="portafolio 5">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
+            <div id="carouselExampleDark2" class="carousel carousel-dark slide d-lg-none" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4300">
+                        <img src="assets/img/Portafolio03.jpg" class="d-block w-100" alt="portafolio 3">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="assets/img/Portafolio04.jpg" class="d-block w-100" alt="portafolio 4">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="assets/img/Portafolio05.jpg" class="d-block w-100" alt="portafolio 5">
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div>
-                <div id="carouselExampleDark3" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="4600">
-                            <img src="assets/img/Portafolio06.jpg" class="d-block w-100" alt="portafolio 6">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="4000">
-                            <img src="assets/img/Portafolio07.jpg" class="d-block w-100" alt="portafolio 7">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="4000">
-                            <img src="assets/img/Portafolio08.jpg" class="d-block w-100" alt="portafolio 8">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
+            <div id="carouselExampleDark3" class="carousel carousel-dark slide d-lg-none" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4600">
+                        <img src="assets/img/Portafolio06.jpg" class="d-block w-100" alt="portafolio 6">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark3"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark3"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div> 
-            </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="assets/img/Portafolio07.jpg" class="d-block w-100" alt="portafolio 7">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="assets/img/Portafolio08.jpg" class="d-block w-100" alt="portafolio 8">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> 
         </div>
     </section>
 
     <!-- 4 Seccion CV -->
-    <section class="main" id="section-cv">
+    <section class="main d-lg-none" id="section-cv">
         <div class="section-offset px-4 text-center">
             <h1 class="py-4">ARQUITECTO<br>ARTISTA 3D</h1>
             <p class="mb-3">Arquitecto graduado con amplia experiencia en el área de visualización digital, he tenido la
@@ -419,15 +486,22 @@
 
     <!-- 5 Seccion Contacto -->
     <section class="main" id="section-contactos">
-        <div class="typeform-widget" data-url="https://form.typeform.com/to/kQRzQLlt?typeform-medium=embed-snippet" data-hide-footer="true" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        <div class="typeform-widget" data-url="https://form.typeform.com/to/LUtNi2bR?typeform-medium=embed-snippet" data-hide-headers="true" data-hide-footer="true" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
     </section>
 
     <!-- 6 Seccion Footer -->
     <footer>
-        <div class="p-4 text-center">
-            <i class="px-2 fab fa-linkedin-in fa-2x"></i>
-            <i class="px-2 fab fa-skype fa-2x"></i>
-            <i class="px-2 fab fa-whatsapp fa-2x"></i>
+        <div class="p-5 text-center">
+            <a href="https://www.linkedin.com/in/fernandojaviergg/" target="_blank">
+                <i class="px-2 fab fa-linkedin-in fa-3x"></i>
+            </a>
+            
+            <a href="skype:fernandojaviergg?Start Chat" target="_blank">
+                <i class="px-2 fab fa-skype fa-3x"></i>
+            </a>
+            <a href="https://wa.me/56994802925" target="_blank">
+                <i class="px-2 fab fa-whatsapp fa-3x"></i>
+            </a>
         </div>
     </footer>
 
